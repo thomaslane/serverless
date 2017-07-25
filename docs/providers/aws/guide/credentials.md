@@ -148,7 +148,7 @@ provider:
   name: aws
   runtime: nodejs6.10
   stage: ${opt:stage, self:custom.defaultStage}
-  profile: ${self:custom.profiles.${self:provider.stage}}
+  profile: ${self:custom.profiles.${self:provider.stage}Profile}
 custom:
   defaultStage: dev
   profiles:
